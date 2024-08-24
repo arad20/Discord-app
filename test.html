@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Submit and Cancel Example</title>
+    </head>
+
+
+    <body>
+        <input type="text" id="textInput" placeholder="Type something...">
+        <button id="submitBtn">Submit</button>
+        <button id="cancelBtn">Cancel</button>
+
+        <div id="textDisplay">Your text will appear here...</div>
+
+        <script>
+            const textInput = document.getElementById('textInput');
+            const submitBtn = document.getElementById('submitBtn');
+            const cancelBtn = document.getElementById('cancelBtn');
+            const textDisplay = document.getElementById('textDisplay');
+
+            submitBtn.addEventListener('click', function() {
+                textDisplay.textContent = textInput.value;
+            });
+
+            cancelBtn.addEventListener('click', function() {
+                // Placeholder: You can add code to close the menu or clear the input
+            });
+        </script>
+    </body>
+    
+</html>
